@@ -1,13 +1,94 @@
 
-/*covid bar section*/
+/*covid bar section if time*/
 
-/*header section*/
-header {
-    padding-top: 0px;
-    height: 60px;
-    background-color: #666;
+/*2nd attempt nav bar*/
+nav {
+    background-color: rgb (33,37,41);
+}
+.navBar {
+    background-color: rgb(33,37,41);
+    display: inline-block;
+    width: 100%;
+}
+.navBar li ul {
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+.navLeft a img {
+    height: 30px;
+    width: 30px;
+}
+.navbar-brand {
     color: white;
 }
+/*drop dowm menu from css w3school*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb (33,37,41);
+    color: white;
+    min-width: 160px;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    width: auto;
+    background-color: rgb (33,37,41);
+  }
+  .dropdown:hover .dropdown-content p {
+    display: block;
+    background-color: rgb(33,37,41);
+  }
+  /*
+  .applyNow {
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(227,62,67);
+    color: white;
+    text-anchor: middle;
+  }
+  */
+  li ul .applyNow {
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(227,62,67);
+    color: white;
+    text-anchor: middle;
+  }
+  /*.scheduleMeeting {
+      width: 150px;
+      height: 30px;
+      text-align: center;
+      display: inline-block;
+      background-color: #b3d4fc;
+      color: white;
+  }*/
+  li ul .scheduleMeeting {
+    line-height: 30px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    background-color: #b3d4fc;
+    color: white;
+    text-decoration: none;
+  }
+  ul #schedule a {
+      color: white;
+      line-height: 31.5px;;
+      font-size: 12px;
+      font-weight: 400;
+      margin: 0px;
+      background-color: #b3d4fc;
+      text-decoration: none;
+  }
 
 /*pageContent*/
 .fullWidth video {
@@ -20,8 +101,6 @@ header {
 .fullscreen-background {
     width: 100%;
     z-index: 0;
-}
-.videoWrapper {
     margin-bottom: 0px;
 }
 
@@ -51,6 +130,7 @@ header {
     width: 661px;
     letter-spacing: 2.5px;
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 .overlay a {
@@ -58,13 +138,15 @@ header {
     background-color: #e33e43;
     text-transform: uppercase;
     color: #fff;
-    display: inline-block;
+    display: border-box;
     font-weight: 500;
-    padding: .39emm .65em .34em .65em;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 32px;
     margin-left: 30px;
     margin-bottom: 7px;
     font-size: 30px;
-    text-align: left;
     position: relative;
 }
 
@@ -82,13 +164,12 @@ header {
 }
   
 /*css for cards*/
-
+#contentSections {
+    box-sizing: border-box;
+    background-color: #efefef;
+}
 .grayCardsWrapper h1 {
     text-align: center;
-}
-#contentSections {
-    padding-bottom: 0;
-    background-color: #efefef;
 }
 .cards-flex {
     display: flex;
@@ -96,6 +177,7 @@ header {
     align-items: stretch;
     box-sizing: border-box;
 }
+
 .grayCards {
     padding: 45px 0 45px 0;
 }
@@ -103,22 +185,31 @@ header {
     padding-left: 5%;
     padding-right: 5%;
 }
+.center {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #348db9;
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: .2em;
+}
 .card-content {
     line-height: 1.4;
     color: #676767;
-    padding-top: 1em 9% 0;
+    padding-top: 9%;
     padding-right: 9%;
     padding-bottom: 0px;
     padding-left: 9%; 
     box-sizing: border-box;
 }
 .card-content h2 {
+    text-align: center;
     color: #676767;
     font-size: 28px;
     font-weight: 800px;
 }
 .card-content p {
     color: #676767;
+    text-align: center;
     font-size: 17px;
 }
 .card-wrapper {
@@ -126,18 +217,23 @@ header {
     display: flex;
     flex-direction: column;
 }
-.card {
-    width: 31.667%;
+.card {width: 31.667%;
     display: flex;
     margin-right: 1.3%;
 }
 .cardButton {
+    box-sizing: border-box;
     background: #e33e42;
     color: #fff;
     text-align: center;
     font-weight: 700;
     padding: .5em;
+    bottom: 0;
 }
+.group {
+    bottom: 0;
+}
+
 
 
 
@@ -154,7 +250,7 @@ text into the larger card*/
     padding-bottom: 45px;
     padding-right: 5px;
     width: 100%;
-    display: block;
+    display: inline-flex;
     background-color: #fff;
 }
 .elevenImage {
@@ -166,7 +262,8 @@ text into the larger card*/
     float: center;
 }
 .columnTwo {
-    height: 500px;
+    text-align: center;
+    height: 400px;
 }
 .columnTwo h2 {
     font-size: 28px;

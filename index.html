@@ -11,12 +11,131 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Static Layout</title>
   </head>
-             <!--yellow covid bar -->
+              <!--yellow covid bar if time-->
 
         <!--siteHeader/navbar on 1150--> 
+        <!-- 1st attempt reference
     <header id="siteHeader">
       </div class="navBar">Eleven Fifty Academy</div>
+      <nav class="menu">
+      <ul>
+        <li>
+          <a class="logo" href="https://elevenfifty.org"></a>
+        </li>
+        <li><a class="dropDown" href="">Courses</li>
+        <li><a class="dropDown" href="">Admissions</li>
+        <li><a class="dropDown" href="">Veterans</li>
+        <li><a class="dropDown" href="">About</li>
+        <li><a class="dropDown" href="">Employers</li>
+      </ul>
+      </nav>
   </header>
+                      -->
+  <header class="siteHeader">
+    <nav class="navBar">
+      <li>
+        <ul>
+          <a class="navbar-brand" href="#">
+          <img src="data:image/png;base64,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" width="30" height="30" class="d-inline-block align-top" alt="">
+          Eleven Fifty Academy</a>
+        </ul>
+        <ul>
+          <div class="navCenter">
+            <div class="dropdown">
+               <span>Courses</span>
+                <div class="dropdown-content">
+                 <p>dropdown</p>
+                 <p>it;smems</p>
+                 <p>yada yada</p>
+                 <p>yada yada</p>
+                 <p>yada yada</p>
+                 <p>yada yada</p>
+                 <p>yada yada</p>
+                 <p>yada yada</p>
+                 <p>yada yada</p>
+                 <p>yada yada</p>
+                 <p>yada yada</p>
+                 <p>yada yada</p>
+                </div>
+            </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="navCenter">
+            <div class="dropdown">
+               <span>Admissions</span>
+                <div class="dropdown-content">
+                 <p>options</p>
+                 <p>it;smems</p>
+                 <p>more</p>
+                 <p>jdmklam</p>
+                 <p>yada yada</p>
+                </div>
+            </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="navCenter">
+            <div class="dropdown">
+               <span>Veterans</span>
+                <div class="dropdown-content">
+                 <p>Hello World!</p>
+                 <p>it;smems</p>
+                </div>
+            </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="navCenter">
+            <div class="dropdown">
+               <span>About</span>
+                <div class="dropdown-content">
+                 <p>Hello World!</p>
+                 <p>it;smems</p>
+                 <p>yada yada</p>
+                 <p>yada yada</p>
+                 <p>yada yada</p>
+                </div>
+            </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="navCenter">
+            <div class="dropdown">
+               <span>Employers</span>
+                <div class="dropdown-content">
+                 <p>Hello World!</p>
+                 <p>it;smems</p>
+                </div>
+            </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text" id="btnGroupAddon">@</div>
+            </div>
+            <input type="text" class="form-control" placeholder="Search..." aria-label="Input group example" aria-describedby="btnGroupAddon">
+          </div>
+        </div>
+        </ul>
+        <ul id="schedule">
+          <div class="scheduleMeeting">
+            <a href="https://elevenfifty.org/admissions/schedule-a-meeting/">Schedule A Meeting</a>
+          </div>
+        </ul>
+        <ul id="apply">
+          <div class="applyNow">
+            <a href="https://www.elevenfifty.org/admissions/apply-now/">Apply Now</a>
+          </div>
+        </ul>
+
+    </li>
+    </nav>
+      
+
+  </header>
+
 <!--fullscreen background video-->
 <body>
   <div id="pageContent" class="fullWidth">
@@ -57,7 +176,7 @@
                       <p>Want to discover if you'd enjoy a career in coding or cybersecurity? Try one of our FREE intro courses from home.</p>
                     </div>
                     <div class="cardButton">
-                      "SIGN UP NOW "
+                      SIGN UP NOW
                     </div>
                   </div>
                 </a>
@@ -71,7 +190,7 @@
                      <p>Learn today’s most relevant software development or cybersecurity skills to kick off a new career in the tech industry. </p>
                   </div>
                 <div class="cardButton">
-                  "FULL-TIME COURSES "
+                  FULL-TIME COURSES
                   </div>
                 </div>
                </a>
@@ -87,7 +206,7 @@
                       </p>                   
                     </div>
                     <div class="cardButton">
-                      "PART-TIME COURSES"
+                      PART-TIME COURSES
                     </div>
                   </div>
                 </a>
@@ -99,7 +218,6 @@
 
       <!--Final section do top part with logo on left and text on right-->
       <div class ="iconSection">
-        <div class="iconWrapper">
               <div class ="columnOne">
                 <div class ="iconHolder">
                   <img class ="elevenImage" src="https://elevenfifty.org/wp-content/uploads/2019/03/shield.png">
@@ -112,7 +230,6 @@
                   providing relevant coding skills for the most in-demand jobs in today’s tech ecosystem.
                 </p>
               </div> 
-        </div>
       </div>
     </div>
   </div>
