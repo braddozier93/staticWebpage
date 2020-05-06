@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../portfolioWalkthrough"
+		},
+		{
+			"path": "../../JavaScript-Library"
+		},
+		{
+			"path": "../../HTMLCSSPreWork"
+		}
+	],
+	"settings": {}
+}
