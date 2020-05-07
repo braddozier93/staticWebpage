@@ -17,11 +17,13 @@ nav {
     display: flex;
     flex-direction: row;
     width: 100%;
+
 }
 .navBar li ul {
     color: white;
     display: inline-block;
     text-align: center;
+    margin-top: 10px;
 }
 .navLeft a img {
     justify-content: flex-start;
@@ -53,38 +55,32 @@ nav {
     display: block;
     background-color: rgb(33,37,41);
   }
-  /*
-  .applyNow {
-    height: 30px;
-    text-align: center;
-    display: inline-block;
+  /*nav bar right blue/red buttons*/
+.schedule {
+    justify-content: flex-end;
+}
+.apply {
+    justify-content: flex-end;
+}
+
+/*try li ul .schedule and .apply next
+li ul .apply{
     background-color: rgb(227,62,67);
     color: white;
-    text-anchor: middle;
-  }
-  */
-  
-  li ul .applyNow {
+}*/
+li ul .applyNow {
     height: 30px;
+    width: 150px;
     text-align: center;
     display: flex;
     justify-content: flex-end;
     background-color: rgb(227,62,67);
     color: white;
-    text-anchor: middle;
-  }
-  /*.scheduleMeeting {
-      width: 150px;
-      height: 30px;
-      text-align: center;
-      display: inline-block;
-      background-color: #b3d4fc;
-      color: white;
-  }*/
-  li ul .scheduleMeeting {
+    text-decoration: none;
+}
+li ul .scheduleMeeting {
     line-height: 30px;
     width: 150px;
-    height: 30px;
     text-align: center;
     display: flex;
     justify-content: flex-end;
@@ -92,15 +88,7 @@ nav {
     color: white;
     text-decoration: none;
   }
-  ul #schedule a {
-      color: white;
-      line-height: 31.5px;;
-      font-size: 12px;
-      font-weight: 400;
-      margin: 0px;
-      background-color: #b3d4fc;
-      text-decoration: none;
-  }
+  
 
 /*pageContent*/
 .fullWidth video {
@@ -113,7 +101,6 @@ nav {
 .fullscreen-background {
     width: 100%;
     z-index: 0;
-    margin-bottom: 0px;
 }
 
 .overlay {
